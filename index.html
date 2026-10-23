@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO & METADADOS ESTRATÉGICOS -->
-    <title>Shopping das Tintas Sapiranga | Loja de Tintas, Impermeabilizantes e Acessórios</title>
-    <meta name="description" content="Loja de tintas em Sapiranga com nota 4,9 no Google (+235 avaliações). TOP 10 revenda Killing no RS, Suvinil, Coral e Montana. Mais de 2.000 cores na hora e entrega rápida na sua obra!">
-    <meta name="keywords" content="loja de tintas sapiranga, tintas sapiranga, shopping das tintas, tinta suvinil sapiranga, tinta killing sapiranga, kisacril sapiranga, borracha liquida sapiranga">
+    <title>Shopping das Tintas Sapiranga | 16 Anos · Loja de Tintas, Impermeabilizantes e Acessórios</title>
+    <meta name="description" content="16 anos de tradição em Sapiranga! Loja de tintas com nota 4,9 no Google (+235 avaliações). TOP 10 revenda Killing no RS, Suvinil, Coral e Montana. Mais de 2.000 cores na hora e entrega rápida na sua obra!">
+    <meta name="keywords" content="loja de tintas sapiranga, tintas sapiranga, shopping das tintas, shopping das tintas 16 anos, tinta suvinil sapiranga, tinta killing sapiranga, kisacril sapiranga, borracha liquida sapiranga">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://shoppingtintas.com.br">
 
@@ -130,6 +130,12 @@
             box-shadow: 0 16px 30px -10px rgba(19, 100, 241, 0.12);
         }
 
+        /* REMOÇÃO DE FUNDO BRANCO DOS LOGOS DAS MARCAS */
+        .logo-blend {
+            mix-blend-mode: multiply;
+            filter: contrast(106%);
+        }
+
         /* ANIMAÇÃO DE PULSO NO BOTÃO WHATSAPP */
         @keyframes pulse-ring {
             0% { transform: scale(0.95); opacity: 0.8; }
@@ -162,6 +168,9 @@
                     <span id="storeStatusText">Loja Física Aberta</span>
                 </span>
                 <span class="text-slate-300 text-[11px] sm:text-xs">R. Pres. Kennedy, 543 - Centro, Sapiranga</span>
+                <span class="hidden xl:inline-flex items-center gap-1 px-2 py-0.5 rounded bg-brand-yellow/20 text-brand-yellow font-bold text-[10px] uppercase tracking-wider ml-1">
+                    🎉 16 Anos de Tradição
+                </span>
             </div>
             <div class="flex items-center gap-4 text-slate-300 text-xs">
                 <span class="hidden md:inline text-[11px]">Seg a Sex: 07:30-11:30, 13:00-18:25 · Sáb: 08:00-12:00</span>
@@ -177,9 +186,31 @@
     <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100 transition-all">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
             
-            <!-- LOGOTIPO EM VETOR FIEL -->
-            <a href="#" class="flex items-center gap-2 group" aria-label="Shopping das Tintas Sapiranga">
+            <!-- LOGOTIPO EM VETOR FIEL 16 ANOS -->
+            <a href="#" class="flex items-center gap-2.5 sm:gap-3 group" aria-label="Shopping das Tintas - 16 Anos Sapiranga">
+                <!-- FITA COMEMORATIVA 16 ANOS (VETOR FIEL À MARCA) -->
+                <div class="relative flex items-center justify-center shrink-0 transition-transform group-hover:scale-105">
+                    <svg class="w-6 h-8 sm:w-7 sm:h-9 drop-shadow-sm" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="0,0 4,0 4,30 0,32" fill="#1364F1"/>
+                        <polygon points="4,0 8,0 8,28 4,30" fill="#E53935"/>
+                        <polygon points="8,0 12,0 12,26 8,28" fill="#FDB723"/>
+                        <polygon points="12,0 16,0 16,28 12,26" fill="#252678"/>
+                        <polygon points="16,0 20,0 20,30 16,28" fill="#2E7D32"/>
+                        <polygon points="20,0 24,0 24,32 20,30" fill="#FD792E"/>
+                    </svg>
+                </div>
+
                 <div class="flex flex-col">
+                    <!-- TAG 16 ANOS ALINHADA AO LOGO -->
+                    <div class="flex items-center gap-1.5 -mb-0.5">
+                        <span class="font-heading font-black text-[9px] sm:text-[10px] tracking-[0.22em] text-brand-blue uppercase bg-blue-50 px-1.5 py-0.5 rounded border border-blue-200/80 leading-none">
+                            16 ANOS
+                        </span>
+                        <span class="hidden sm:inline text-[8px] font-heading font-bold text-slate-400 tracking-wider uppercase">
+                            EM SAPIRANGA
+                        </span>
+                    </div>
+
                     <div class="flex items-center">
                         <span class="font-heading font-black text-2xl sm:text-3xl tracking-tight text-brand-blue flex items-center">
                             Shopp
@@ -243,9 +274,12 @@
                         
                         <div class="flex flex-wrap items-center gap-2 mb-4">
                             <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-yellow text-brand-dark font-heading font-black text-[11px] uppercase tracking-wider shadow-sm">
-                                ★ 4,9 no Google (+235 Avaliações)
+                                🎖️ 16 Anos em Sapiranga
                             </span>
                             <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-white border border-white/20 font-heading font-semibold text-[11px] uppercase tracking-wider backdrop-blur-sm">
+                                ★ 4,9 no Google (+235 Avaliações)
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-blue/30 text-white border border-brand-blue/40 font-heading font-semibold text-[11px] uppercase tracking-wider backdrop-blur-sm">
                                 TOP 10 Revenda Killing RS
                             </span>
                         </div>
@@ -256,7 +290,7 @@
                         </h1>
 
                         <p class="text-sm sm:text-base text-slate-200 font-normal leading-relaxed max-w-xl mb-6">
-                            Cor exata no leque, preparo em 5 minutos na máquina tintométrica e entrega ágil direto na sua obra.
+                            16 anos de tradição: cor exata no leque, preparo em 5 minutos na máquina tintométrica e entrega ágil direto na sua obra.
                         </p>
 
                         <!-- Diferenciais em 2 Colunas -->
@@ -489,22 +523,49 @@
                     </span>
                 </div>
 
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
-                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                        <p class="font-heading font-black text-xl text-slate-800">KILLING</p>
-                        <span class="text-[10px] font-heading font-bold text-brand-blue uppercase">Kisacril Oficial</span>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 text-center">
+                    <!-- Killing -->
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200/90 hover:border-brand-blue shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center group hover-lift min-h-[140px]">
+                        <div class="h-14 w-full flex items-center justify-center mb-2 px-2">
+                            <img src="tintaskilling-shoppingdastintas.png" 
+                                 alt="Tintas Killing - Kisacril" 
+                                 class="max-h-11 max-w-[140px] w-auto object-contain logo-blend transition-transform duration-300 group-hover:scale-105" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/160x50/ffffff/005596?text=Tintas+Killing';">
+                        </div>
+                        <span class="text-[10px] font-heading font-bold text-brand-blue uppercase tracking-wider">Kisacril Oficial</span>
                     </div>
-                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                        <p class="font-heading font-black text-xl text-slate-800">SUVINIL</p>
-                        <span class="text-[10px] font-heading font-bold text-brand-orange uppercase">Linha Completa</span>
+
+                    <!-- Suvinil -->
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200/90 hover:border-brand-orange shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center group hover-lift min-h-[140px]">
+                        <div class="h-14 w-full flex items-center justify-center mb-2 px-2">
+                            <img src="suvinil-shoppingdastintas.png" 
+                                 alt="Suvinil Tintas" 
+                                 class="max-h-10 max-w-[135px] w-auto object-contain logo-blend transition-transform duration-300 group-hover:scale-105" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/160x50/ffffff/e25a1e?text=Suvinil';">
+                        </div>
+                        <span class="text-[10px] font-heading font-bold text-brand-orange uppercase tracking-wider">Linha Completa</span>
                     </div>
-                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                        <p class="font-heading font-black text-xl text-slate-800">CORAL</p>
-                        <span class="text-[10px] font-heading font-bold text-blue-700 uppercase">Coral Master</span>
+
+                    <!-- Coral -->
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200/90 hover:border-blue-700 shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center group hover-lift min-h-[140px]">
+                        <div class="h-14 w-full flex items-center justify-center mb-2 px-2">
+                            <img src="coral-shoppingdastintas.png" 
+                                 alt="Tintas Coral" 
+                                 class="max-h-14 max-w-[125px] w-auto object-contain logo-blend transition-transform duration-300 group-hover:scale-105" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/160x50/ffffff/19326e?text=Coral';">
+                        </div>
+                        <span class="text-[10px] font-heading font-bold text-blue-700 uppercase tracking-wider">Coral Master</span>
                     </div>
-                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                        <p class="font-heading font-black text-xl text-slate-800">MONTANA</p>
-                        <span class="text-[10px] font-heading font-bold text-amber-700 uppercase">Osmocolor Stains</span>
+
+                    <!-- Montana -->
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200/90 hover:border-amber-700 shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center group hover-lift min-h-[140px]">
+                        <div class="h-14 w-full flex items-center justify-center mb-2 px-2">
+                            <img src="montana-shoppingdastintas.png" 
+                                 alt="Montana Química - Osmocolor" 
+                                 class="max-h-11 max-w-[135px] w-auto object-contain logo-blend transition-transform duration-300 group-hover:scale-105" 
+                                 onerror="this.onerror=null; this.src='https://placehold.co/160x50/ffffff/151c38?text=Montana';">
+                        </div>
+                        <span class="text-[10px] font-heading font-bold text-amber-700 uppercase tracking-wider">Osmocolor Stains</span>
                     </div>
                 </div>
             </div>
@@ -764,9 +825,9 @@
             <div class="max-w-7xl mx-auto">
                 
                 <div class="text-center max-w-xl mx-auto mb-10">
-                    <span class="text-xs font-heading font-bold uppercase tracking-widest text-brand-blue">Diferenciais de Balcão</span>
+                    <span class="text-xs font-heading font-bold uppercase tracking-widest text-brand-blue">Tradição & Confiança</span>
                     <h2 class="font-heading font-black text-2xl sm:text-3xl text-brand-navy mt-1">
-                        Por que comprar no Shopping das Tintas?
+                        Há 16 anos sendo a referência em Sapiranga
                     </h2>
                 </div>
 
@@ -958,10 +1019,23 @@
     <!-- FOOTER INSTITUCIONAL -->
     <footer class="bg-brand-dark text-slate-400 py-10 px-4 sm:px-6 lg:px-8 border-t border-slate-800 text-xs">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-            <div>
-                <span class="font-heading font-black text-lg text-white tracking-tight">Shopping das Tintas Sapiranga</span>
-                <p class="text-slate-400 mt-0.5">R. Pres. Kennedy, 543 - Sl 02 - Centro, Sapiranga - RS</p>
-                <p class="text-slate-500 text-[11px] mt-0.5">Seg a Sex: 07:30-11:30, 13:00-18:25 · Sáb: 08:00-12:00</p>
+            <div class="flex items-center gap-3">
+                <svg class="w-6 h-8 shrink-0 opacity-80" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="0,0 4,0 4,30 0,32" fill="#1364F1"/>
+                    <polygon points="4,0 8,0 8,28 4,30" fill="#E53935"/>
+                    <polygon points="8,0 12,0 12,26 8,28" fill="#FDB723"/>
+                    <polygon points="12,0 16,0 16,28 12,26" fill="#252678"/>
+                    <polygon points="16,0 20,0 20,30 16,28" fill="#2E7D32"/>
+                    <polygon points="20,0 24,0 24,32 20,30" fill="#FD792E"/>
+                </svg>
+                <div>
+                    <div class="flex items-center justify-center md:justify-start gap-2">
+                        <span class="font-heading font-black text-lg text-white tracking-tight">Shopping das Tintas</span>
+                        <span class="text-[9px] font-heading font-black text-brand-yellow uppercase px-1.5 py-0.5 rounded bg-brand-yellow/10 border border-brand-yellow/30">16 ANOS</span>
+                    </div>
+                    <p class="text-slate-400 mt-0.5">R. Pres. Kennedy, 543 - Sl 02 - Centro, Sapiranga - RS</p>
+                    <p class="text-slate-500 text-[11px] mt-0.5">Seg a Sex: 07:30-11:30, 13:00-18:25 · Sáb: 08:00-12:00</p>
+                </div>
             </div>
 
             <div class="flex flex-wrap items-center justify-center gap-5 font-heading font-medium text-slate-300">
@@ -973,7 +1047,7 @@
             </div>
 
             <div class="text-[11px] text-slate-500 text-center md:text-right">
-                <p>© 2026 Shopping das Tintas · Sapiranga / RS</p>
+                <p>© 2026 Shopping das Tintas · 16 Anos de Tradição · Sapiranga / RS</p>
                 <p class="mt-0.5">Posicionamento Digital desenvolvido por <strong class="text-brand-yellow font-medium">GENTTE</strong></p>
             </div>
         </div>
