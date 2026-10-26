@@ -5,29 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO & METADADOS ESTRATÉGICOS -->
-    <title>Shopping das Tintas Sapiranga | 16 Anos · Loja de Tintas, Impermeabilizantes e Acessórios</title>
-    <meta name="description" content="16 anos de tradição em Sapiranga! Loja de tintas com nota 4,9 no Google (+235 avaliações). TOP 10 revenda Killing no RS, Suvinil, Coral e Montana. Mais de 2.000 cores na hora e entrega rápida na sua obra!">
-    <meta name="keywords" content="loja de tintas sapiranga, tintas sapiranga, shopping das tintas, shopping das tintas 16 anos, tinta suvinil sapiranga, tinta killing sapiranga, kisacril sapiranga, borracha liquida sapiranga">
+    <title>Shopping das Tintas Sapiranga | 16 Anos · Tintas, Impermeabilizantes e Acessórios</title>
+    <meta name="description" content="Shopping das Tintas em Sapiranga há 16 anos. Mais de 235 avaliações com nota 4,9 no Google. TOP 10 revenda Killing no RS, Suvinil, Coral e Montana. Máquina de cores e entrega rápida na sua obra!">
+    <meta name="keywords" content="loja de tintas sapiranga, shopping das tintas, tintas sapiranga, tinta killing sapiranga, kisacril sapiranga, tinta suvinil sapiranga, tinta coral sapiranga, borracha liquida sapiranga">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://shoppingtintas.com.br">
 
     <!-- OPEN GRAPH -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Shopping das Tintas Sapiranga | Loja Completa de Pintura">
-    <meta property="og:description" content="Tintas, impermeabilizantes e acessórios em Sapiranga. Nota 4.9★ no Google, máquina de cores na hora e entrega ágil.">
-    <meta property="og:url" content="https://shoppingtintas.com.br">
-    <meta property="og:site_name" content="Shopping das Tintas">
+    <meta property="og:title" content="Shopping das Tintas Sapiranga | 16 Anos de Tradição">
+    <meta property="og:description" content="Tintas e materiais para pintura em Sapiranga. +2.000 cores prontas em 5 min e entrega ágil na sua obra. Nota 4,9★ no Google.">
     <meta property="og:locale" content="pt_BR">
 
-    <!-- SCHEMA.ORG DADOS ESTRUTURADOS -->
+    <!-- DADOS ESTRUTURADOS SCHEMA.ORG (LOCAL BUSINESS) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "HomeGoodsStore",
-      "name": "Shopping das Tintas",
-      "image": "https://shoppingtintas.com.br/logo.png",
+      "name": "Shopping das Tintas Sapiranga",
       "telephone": "+55-51-99261-1901",
-      "url": "https://shoppingtintas.com.br",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "R. Pres. Kennedy, 543 - Sl 02 - Centro",
@@ -36,37 +31,18 @@
         "postalCode": "93800-140",
         "addressCountry": "BR"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -29.6384,
-        "longitude": -51.0069
-      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
         "reviewCount": "235"
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "07:30",
-          "closes": "18:25"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
-          "opens": "08:00",
-          "closes": "12:00"
-        }
-      ]
+      }
     }
     </script>
 
-    <!-- FONTES -->
+    <!-- FONTES GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- TAILWIND CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -78,7 +54,7 @@
                         brand: {
                             blue: '#1364F1',
                             navy: '#151C38',
-                            dark: '#0D1326',
+                            dark: '#080D1A',
                             yellow: '#FDB723',
                             orange: '#FD792E',
                             red: '#E53935',
@@ -94,12 +70,14 @@
         }
     </script>
 
+    <!-- ESTILOS E REGRAS VISUAIS -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
             color: #1e293b;
             background-color: #ffffff;
             overflow-x: hidden;
+            font-size: 15px;
         }
 
         /* FAIXA COLORIDA INSTITUCIONAL DA MARCA */
@@ -130,12 +108,6 @@
             box-shadow: 0 16px 30px -10px rgba(19, 100, 241, 0.12);
         }
 
-        /* REMOÇÃO DE FUNDO BRANCO DOS LOGOS DAS MARCAS */
-        .logo-blend {
-            mix-blend-mode: multiply;
-            filter: contrast(106%);
-        }
-
         /* ANIMAÇÃO DE PULSO NO BOTÃO WHATSAPP */
         @keyframes pulse-ring {
             0% { transform: scale(0.95); opacity: 0.8; }
@@ -144,6 +116,51 @@
         }
         .pulse-whatsapp {
             animation: pulse-ring 2.5s infinite ease-in-out;
+        }
+
+        /* PADRONIZAÇÃO VISUAL DOS CARDS DE MARCAS PARCEIRAS */
+        .partner-card {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 1rem;
+            padding: 1.25rem;
+            display: flex;
+            flex-col;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 175px;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+            transition: all 0.25s ease;
+        }
+        .partner-card:hover {
+            border-color: #1364F1;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -8px rgba(19, 100, 241, 0.15);
+        }
+        .partner-logo-box {
+            height: 80px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .partner-logo-img {
+            max-height: 58px;
+            width: auto;
+            max-width: 90%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+        .partner-card:hover .partner-logo-img {
+            transform: scale(1.08);
+        }
+
+        /* Trata o fundo preto nativo do montana.jpg caso seja usado diretamente em JPG */
+        .montana-jpg-clean {
+            filter: invert(1) hue-rotate(180deg) brightness(0.88) contrast(1.4);
+            mix-blend-mode: multiply;
         }
     </style>
 </head>
@@ -160,84 +177,48 @@
     </div>
 
     <!-- BARRA DE STATUS SUPERIOR -->
-    <div class="bg-brand-navy text-white text-xs py-2 px-4 border-b border-white/10">
+    <div class="bg-brand-navy text-white py-2.5 px-4 border-b border-white/10 text-xs sm:text-sm">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
-            <div class="flex items-center gap-2 text-center sm:text-left">
-                <span id="storeStatusBadge" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-semibold text-[10px] uppercase tracking-wider">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+            <div class="flex items-center gap-2.5 text-center sm:text-left">
+                <span id="storeStatusBadge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 font-bold text-xs uppercase tracking-wider">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
                     <span id="storeStatusText">Loja Física Aberta</span>
                 </span>
-                <span class="text-slate-300 text-[11px] sm:text-xs">R. Pres. Kennedy, 543 - Centro, Sapiranga</span>
-                <span class="hidden xl:inline-flex items-center gap-1 px-2 py-0.5 rounded bg-brand-yellow/20 text-brand-yellow font-bold text-[10px] uppercase tracking-wider ml-1">
-                    🎉 16 Anos de Tradição
+                <span class="text-slate-200 font-medium">R. Pres. Kennedy, 543 - Centro, Sapiranga</span>
+                <span class="hidden xl:inline-flex items-center gap-1 px-2.5 py-0.5 rounded bg-brand-yellow/20 text-brand-yellow font-bold text-xs uppercase tracking-wider ml-1">
+                    🎉 16 Anos
                 </span>
             </div>
-            <div class="flex items-center gap-4 text-slate-300 text-xs">
-                <span class="hidden md:inline text-[11px]">Seg a Sex: 07:30-11:30, 13:00-18:25 · Sáb: 08:00-12:00</span>
-                <a href="tel:51992611901" class="hover:text-brand-yellow transition-colors font-medium text-white flex items-center gap-1.5">
-                    <svg class="w-3.5 h-3.5 text-brand-yellow" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.22 2.09z"/></svg>
+            <div class="flex items-center gap-4 text-slate-200">
+                <span class="hidden md:inline font-medium">Seg a Sex: 07:30–18:25 · Sáb: 08:00–12:00</span>
+                <a href="tel:51992611901" class="hover:text-brand-yellow transition-colors font-bold text-white flex items-center gap-1.5">
+                    <svg class="w-4 h-4 text-brand-yellow" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.72 11.72 0 003.68.59 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.68 1 1 0 01-.24 1.02l-2.22 2.09z"/></svg>
                     (51) 99261-1901
                 </a>
             </div>
         </div>
     </div>
 
-    <!-- HEADER / NAVEGAÇÃO -->
+    <!-- HEADER / NAVEGAÇÃO COM O NOVO LOGO OFICIAL 16 ANOS -->
     <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100 transition-all">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
             
-            <!-- LOGOTIPO EM VETOR FIEL 16 ANOS -->
-            <a href="#" class="flex items-center gap-2.5 sm:gap-3 group" aria-label="Shopping das Tintas - 16 Anos Sapiranga">
-                <!-- FITA COMEMORATIVA 16 ANOS (VETOR FIEL À MARCA) -->
-                <div class="relative flex items-center justify-center shrink-0 transition-transform group-hover:scale-105">
-                    <svg class="w-6 h-8 sm:w-7 sm:h-9 drop-shadow-sm" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <polygon points="0,0 4,0 4,30 0,32" fill="#1364F1"/>
-                        <polygon points="4,0 8,0 8,28 4,30" fill="#E53935"/>
-                        <polygon points="8,0 12,0 12,26 8,28" fill="#FDB723"/>
-                        <polygon points="12,0 16,0 16,28 12,26" fill="#252678"/>
-                        <polygon points="16,0 20,0 20,30 16,28" fill="#2E7D32"/>
-                        <polygon points="20,0 24,0 24,32 20,30" fill="#FD792E"/>
-                    </svg>
-                </div>
-
-                <div class="flex flex-col">
-                    <!-- TAG 16 ANOS ALINHADA AO LOGO -->
-                    <div class="flex items-center gap-1.5 -mb-0.5">
-                        <span class="font-heading font-black text-[9px] sm:text-[10px] tracking-[0.22em] text-brand-blue uppercase bg-blue-50 px-1.5 py-0.5 rounded border border-blue-200/80 leading-none">
-                            16 ANOS
-                        </span>
-                        <span class="hidden sm:inline text-[8px] font-heading font-bold text-slate-400 tracking-wider uppercase">
-                            EM SAPIRANGA
-                        </span>
-                    </div>
-
-                    <div class="flex items-center">
-                        <span class="font-heading font-black text-2xl sm:text-3xl tracking-tight text-brand-blue flex items-center">
-                            Shopp
-                            <!-- Pincel característico no 'i' -->
-                            <span class="relative inline-flex flex-col items-center mx-[1px]">
-                                <span class="h-2 w-3 rounded-t-sm flex overflow-hidden -mb-[1px]">
-                                    <span class="w-1/3 bg-brand-blue"></span>
-                                    <span class="w-1/3 bg-brand-yellow"></span>
-                                    <span class="w-1/3 bg-brand-red"></span>
-                                </span>
-                                <span class="w-1.5 h-4 bg-brand-blue rounded-b-[1px]"></span>
-                            </span>
-                            ng
-                        </span>
-                    </div>
-                    <span class="font-heading font-black text-[10px] sm:text-[11px] tracking-[0.25em] text-brand-yellow uppercase -mt-1 pl-0.5">
-                        DAS TINTAS
-                    </span>
+            <!-- LOGOTIPO OFICIAL SHOPPING DAS TINTAS 16 ANOS -->
+            <a href="#" class="flex items-center group" aria-label="Shopping das Tintas - 16 Anos Sapiranga">
+                <div class="bg-[#080d1a] px-3.5 sm:px-4 py-2 rounded-xl border border-slate-800 shadow-sm flex items-center justify-center group-hover:border-brand-blue transition-all">
+                    <img src="shopping-das-tintas.jpg" 
+                         alt="Shopping das Tintas - 16 Anos" 
+                         class="h-10 sm:h-12 w-auto object-contain max-w-[210px] sm:max-w-[250px] transition-transform duration-300 group-hover:scale-105"
+                         onerror="this.onerror=null; this.src='https://placehold.co/240x60/080d1a/FDB723?text=Shopping+das+Tintas+16+Anos';">
                 </div>
             </a>
 
-            <!-- NAVEGAÇÃO RÁPIDA (SEM LINK DE PÚBLICOS) -->
-            <nav class="hidden lg:flex items-center gap-7 text-xs font-heading font-semibold text-slate-700 uppercase tracking-wider">
+            <!-- NAVEGAÇÃO RÁPIDA -->
+            <nav class="hidden lg:flex items-center gap-7 text-sm font-heading font-bold text-slate-800 uppercase tracking-wider">
                 <a href="#categorias" class="hover:text-brand-blue transition-colors">Produtos</a>
                 <a href="#marcas" class="hover:text-brand-blue transition-colors">Marcas</a>
-                <a href="#calculadora" class="hover:text-brand-blue transition-colors text-brand-orange flex items-center gap-1">
-                    <span class="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse"></span>
+                <a href="#calculadora" class="hover:text-brand-blue transition-colors text-brand-orange flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-brand-orange animate-pulse"></span>
                     Calcular Tinta
                 </a>
                 <a href="#diferenciais" class="hover:text-brand-blue transition-colors">Diferenciais</a>
@@ -248,7 +229,7 @@
             <!-- CTA WHATSAPP TOPO -->
             <div class="flex items-center gap-3">
                 <button onclick="triggerWhatsApp('header_nav', 'Olá! Estou no site do Shopping das Tintas e gostaria de pedir um orçamento.')" 
-                   class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1faa4f] text-white font-heading font-bold text-xs uppercase tracking-wider px-4 sm:px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all active:scale-95">
+                   class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1faa4f] text-white font-heading font-bold text-xs sm:text-sm uppercase tracking-wider px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all active:scale-95">
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                     <span>Pedir Orçamento</span>
                 </button>
@@ -257,8 +238,8 @@
     </header>
 
     <main>
-        <!-- 1. PRIMEIRA DOBRA COMERCIAL (TEXTO ENXUTO & DIRETO) -->
-        <section class="relative bg-gradient-to-b from-brand-navy via-brand-navy to-brand-dark text-white pt-10 pb-16 lg:pt-14 lg:pb-24 overflow-hidden">
+        <!-- 1. HERO COMERCIAL DIRETO -->
+        <section class="relative bg-gradient-to-b from-brand-navy via-brand-navy to-brand-dark text-white pt-12 pb-16 lg:pt-16 lg:pb-24 overflow-hidden">
             <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand-blue/20 rounded-full blur-3xl pointer-events-none"></div>
             <div class="absolute bottom-0 -left-20 w-80 h-80 bg-brand-yellow/10 rounded-full blur-3xl pointer-events-none"></div>
             
@@ -272,43 +253,43 @@
                     <!-- Lado Esquerdo: Mensagem Principal -->
                     <div class="lg:col-span-7 flex flex-col items-start">
                         
-                        <div class="flex flex-wrap items-center gap-2 mb-4">
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-yellow text-brand-dark font-heading font-black text-[11px] uppercase tracking-wider shadow-sm">
+                        <div class="flex flex-wrap items-center gap-2.5 mb-5">
+                            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-brand-yellow text-brand-dark font-heading font-black text-xs uppercase tracking-wider shadow-sm">
                                 🎖️ 16 Anos em Sapiranga
                             </span>
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-white border border-white/20 font-heading font-semibold text-[11px] uppercase tracking-wider backdrop-blur-sm">
+                            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/10 text-white border border-white/20 font-heading font-semibold text-xs uppercase tracking-wider backdrop-blur-sm">
                                 ★ 4,9 no Google (+235 Avaliações)
                             </span>
-                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-blue/30 text-white border border-brand-blue/40 font-heading font-semibold text-[11px] uppercase tracking-wider backdrop-blur-sm">
-                                TOP 10 Revenda Killing RS
+                            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-brand-blue/30 text-white border border-brand-blue/40 font-heading font-semibold text-xs uppercase tracking-wider backdrop-blur-sm">
+                                TOP 10 Killing RS
                             </span>
                         </div>
 
                         <!-- H1 COMERCIAL DIRETO -->
-                        <h1 class="font-heading font-extrabold text-3xl sm:text-5xl lg:text-[3.25rem] tracking-tight leading-[1.12] mb-4">
+                        <h1 class="font-heading font-extrabold text-3xl sm:text-5xl lg:text-[3.5rem] tracking-tight leading-[1.12] mb-4">
                             Tintas e materiais para pintura em <span class="text-brand-yellow">Sapiranga</span>.
                         </h1>
 
-                        <p class="text-sm sm:text-base text-slate-200 font-normal leading-relaxed max-w-xl mb-6">
-                            16 anos de tradição: cor exata no leque, preparo em 5 minutos na máquina tintométrica e entrega ágil direto na sua obra.
+                        <p class="text-base sm:text-lg text-slate-200 font-normal leading-relaxed max-w-xl mb-6">
+                            16 anos de tradição: cor exata no leque, preparo em 5 minutos na máquina e entrega ágil direto na sua obra.
                         </p>
 
                         <!-- Diferenciais em 2 Colunas -->
-                        <div class="grid grid-cols-2 gap-3 w-full mb-6 text-xs text-slate-200 font-medium">
-                            <div class="flex items-center gap-2">
-                                <span class="text-brand-yellow font-bold text-sm">✓</span>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 w-full mb-7 text-sm sm:text-base text-slate-100 font-medium">
+                            <div class="flex items-center gap-2.5">
+                                <span class="text-brand-yellow font-bold text-base">✓</span>
                                 <span>+2.000 cores prontas na hora</span>
                             </div>
-                            <div class="flex items-center gap-2">
-                                <span class="text-brand-yellow font-bold text-sm">✓</span>
+                            <div class="flex items-center gap-2.5">
+                                <span class="text-brand-yellow font-bold text-base">✓</span>
                                 <span>Entrega rápida no canteiro</span>
                             </div>
-                            <div class="flex items-center gap-2">
-                                <span class="text-brand-yellow font-bold text-sm">✓</span>
+                            <div class="flex items-center gap-2.5">
+                                <span class="text-brand-yellow font-bold text-base">✓</span>
                                 <span>Killing, Suvinil, Coral e Montana</span>
                             </div>
-                            <div class="flex items-center gap-2">
-                                <span class="text-brand-yellow font-bold text-sm">✓</span>
+                            <div class="flex items-center gap-2.5">
+                                <span class="text-brand-yellow font-bold text-base">✓</span>
                                 <span>Soluções contra umidade e mofo</span>
                             </div>
                         </div>
@@ -316,11 +297,11 @@
                         <!-- CTAs -->
                         <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
                             <button onclick="triggerWhatsApp('hero_primary', 'Olá! Gostaria de solicitar um orçamento no Shopping das Tintas Sapiranga.')" 
-                                    class="inline-flex items-center justify-center gap-2.5 bg-[#25D366] hover:bg-[#1faa4f] text-white font-heading font-black text-xs uppercase tracking-wider px-7 py-3.5 rounded-xl shadow-lg shadow-green-500/20 active:scale-95 transition-all">
-                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                                    class="inline-flex items-center justify-center gap-2.5 bg-[#25D366] hover:bg-[#1faa4f] text-white font-heading font-black text-sm uppercase tracking-wider px-8 py-4 rounded-xl shadow-lg shadow-green-500/20 active:scale-95 transition-all">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                                 <span>Pedir Orçamento no WhatsApp</span>
                             </button>
-                            <a href="#calculadora" class="inline-flex items-center justify-center gap-1.5 bg-white/10 hover:bg-white/15 text-white font-heading font-semibold text-xs px-5 py-3.5 rounded-xl border border-white/20 transition-all">
+                            <a href="#calculadora" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 text-white font-heading font-semibold text-sm px-6 py-4 rounded-xl border border-white/20 transition-all">
                                 <span>Calcular Tinta</span>
                                 <span>↓</span>
                             </a>
@@ -329,59 +310,59 @@
 
                     <!-- Lado Direito: Acesso Rápido por Situação -->
                     <div class="lg:col-span-5 relative">
-                        <div class="bg-gradient-to-br from-white/10 to-white/5 border border-white/15 rounded-2xl p-5 sm:p-6 backdrop-blur-md shadow-2xl">
+                        <div class="bg-gradient-to-br from-white/10 to-white/5 border border-white/15 rounded-2xl p-6 sm:p-7 backdrop-blur-md shadow-2xl">
                             
                             <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-4">
                                 <div>
-                                    <p class="font-heading font-bold text-base text-white">Central de Atendimento</p>
-                                    <p class="text-[11px] text-brand-yellow">Consultoria gratuita de cores e produtos</p>
+                                    <p class="font-heading font-bold text-lg text-white">Central de Atendimento</p>
+                                    <p class="text-xs text-brand-yellow font-medium">Consultoria rápida de cores e produtos</p>
                                 </div>
-                                <span class="bg-brand-blue text-white text-[9px] font-heading font-bold uppercase px-2 py-0.5 rounded">
+                                <span class="bg-brand-blue text-white text-xs font-heading font-bold uppercase px-2.5 py-1 rounded">
                                     Sapiranga
                                 </span>
                             </div>
 
-                            <div class="space-y-2.5 mb-4">
+                            <div class="space-y-3 mb-4">
                                 <button onclick="triggerWhatsApp('hero_card_foto', 'Olá! Tenho uma foto da minha parede e gostaria de recomendação de tinta e cor.')" 
-                                        class="w-full text-left p-3 rounded-xl bg-white/5 hover:bg-white/15 border border-white/10 transition-all flex items-center justify-between group">
-                                    <div class="flex items-center gap-2.5">
-                                        <span class="text-lg">📷</span>
+                                        class="w-full text-left p-3.5 rounded-xl bg-white/5 hover:bg-white/15 border border-white/10 transition-all flex items-center justify-between group">
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-xl">📷</span>
                                         <div>
-                                            <p class="text-xs font-heading font-bold text-white group-hover:text-brand-yellow transition-colors">Enviar foto da parede</p>
-                                            <p class="text-[10px] text-slate-300">Avaliamos o fundo preparador e a cor</p>
+                                            <p class="text-sm font-heading font-bold text-white group-hover:text-brand-yellow transition-colors">Enviar foto da parede</p>
+                                            <p class="text-xs text-slate-300">Avaliamos o fundo e a cor certa</p>
                                         </div>
                                     </div>
-                                    <span class="text-slate-400 group-hover:text-white text-xs font-bold">→</span>
+                                    <span class="text-slate-300 group-hover:text-white text-sm font-bold">→</span>
                                 </button>
 
                                 <button onclick="triggerWhatsApp('hero_card_lista', 'Olá! Tenho a lista de materiais do meu pintor para cotar.')" 
-                                        class="w-full text-left p-3 rounded-xl bg-white/5 hover:bg-white/15 border border-white/10 transition-all flex items-center justify-between group">
-                                    <div class="flex items-center gap-2.5">
-                                        <span class="text-lg">📝</span>
+                                        class="w-full text-left p-3.5 rounded-xl bg-white/5 hover:bg-white/15 border border-white/10 transition-all flex items-center justify-between group">
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-xl">📝</span>
                                         <div>
-                                            <p class="text-xs font-heading font-bold text-white group-hover:text-brand-yellow transition-colors">Tenho a lista do pintor</p>
-                                            <p class="text-[10px] text-slate-300">Cotação completa de tintas, massas e rolos</p>
+                                            <p class="text-sm font-heading font-bold text-white group-hover:text-brand-yellow transition-colors">Tenho a lista do pintor</p>
+                                            <p class="text-xs text-slate-300">Cotação completa de tintas e massas</p>
                                         </div>
                                     </div>
-                                    <span class="text-slate-400 group-hover:text-white text-xs font-bold">→</span>
+                                    <span class="text-slate-300 group-hover:text-white text-sm font-bold">→</span>
                                 </button>
 
                                 <button onclick="triggerWhatsApp('hero_card_mofo', 'Olá! Preciso de ajuda para resolver mofo e umidade na parede.')" 
-                                        class="w-full text-left p-3 rounded-xl bg-white/5 hover:bg-white/15 border border-white/10 transition-all flex items-center justify-between group">
-                                    <div class="flex items-center gap-2.5">
-                                        <span class="text-lg">🛡️</span>
+                                        class="w-full text-left p-3.5 rounded-xl bg-white/5 hover:bg-white/15 border border-white/10 transition-all flex items-center justify-between group">
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-xl">🛡️</span>
                                         <div>
-                                            <p class="text-xs font-heading font-bold text-white group-hover:text-brand-yellow transition-colors">Mofo ou infiltração</p>
-                                            <p class="text-[10px] text-slate-300">Borracha líquida e impermeabilizantes</p>
+                                            <p class="text-sm font-heading font-bold text-white group-hover:text-brand-yellow transition-colors">Mofo ou infiltração</p>
+                                            <p class="text-xs text-slate-300">Borracha líquida e impermeabilizantes</p>
                                         </div>
                                     </div>
-                                    <span class="text-slate-400 group-hover:text-white text-xs font-bold">→</span>
+                                    <span class="text-slate-300 group-hover:text-white text-sm font-bold">→</span>
                                 </button>
                             </div>
 
-                            <div class="pt-3 border-t border-white/10 flex items-center justify-between text-xs text-slate-300">
-                                <span>★ <strong>4.9</strong> (235 avaliações no Google)</span>
-                                <span class="text-brand-yellow text-[11px] font-semibold">Resposta rápida</span>
+                            <div class="pt-3 border-t border-white/10 flex items-center justify-between text-xs sm:text-sm text-slate-300">
+                                <span>★ <strong>4.9</strong> (235 avaliações Google)</span>
+                                <span class="text-brand-yellow font-bold">Resposta rápida</span>
                             </div>
 
                         </div>
@@ -391,116 +372,116 @@
             </div>
         </section>
 
-        <!-- 2. CATEGORIAS DE PRODUTOS (CONCISO & OBJETIVO) -->
+        <!-- 2. CATEGORIAS DE PRODUTOS -->
         <section id="categorias" class="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50 border-b border-slate-200">
             <div class="max-w-7xl mx-auto">
                 
                 <div class="text-center max-w-2xl mx-auto mb-10">
-                    <span class="font-heading font-black text-xs uppercase tracking-widest text-brand-blue bg-blue-100 px-3 py-1 rounded-full">
+                    <span class="font-heading font-black text-xs uppercase tracking-widest text-brand-blue bg-blue-100 px-3.5 py-1 rounded-full">
                         Mix Especializado
                     </span>
-                    <h2 class="font-heading font-black text-2xl sm:text-3xl text-brand-navy mt-2">
+                    <h2 class="font-heading font-black text-2xl sm:text-4xl text-brand-navy mt-2.5">
                         O que a sua obra precisa.
                     </h2>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     
                     <!-- 1. Tintas Internas & Externas -->
-                    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+                    <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
                         <div>
-                            <div class="w-10 h-10 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center text-lg mb-3">🏠</div>
-                            <h3 class="font-heading font-bold text-lg text-brand-navy mb-1.5">Tintas Internas & Externas</h3>
-                            <p class="text-slate-600 text-xs leading-relaxed mb-3">
-                                Acrílicas laváveis, cobertura premium e proteção solar. Fosco, acetinado ou semibrilho. Mais de 2.000 cores na hora.
+                            <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center text-2xl mb-4">🏠</div>
+                            <h3 class="font-heading font-bold text-xl text-brand-navy mb-2">Tintas Internas & Externas</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Acrílicas laváveis, cobertura premium e proteção solar. Fosco, acetinado ou semibrilho com +2.000 cores na hora.
                             </p>
-                            <span class="text-[11px] font-heading font-semibold text-brand-blue block mb-4">Suvinil, Killing (Kisacril) e Coral</span>
+                            <span class="text-xs sm:text-sm font-heading font-bold text-brand-blue block mb-5">Suvinil, Killing (Kisacril) e Coral</span>
                         </div>
                         <button onclick="triggerWhatsApp('cat_tintas', 'Olá! Gostaria de cotar tintas de parede internas/externas.')" 
-                                class="w-full py-2.5 bg-slate-100 hover:bg-brand-blue hover:text-white text-brand-navy font-heading font-bold text-xs uppercase tracking-wider rounded-xl transition-colors">
+                                class="w-full py-3 bg-slate-100 hover:bg-brand-blue hover:text-white text-brand-navy font-heading font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl transition-colors">
                             Cotar Tintas de Parede →
                         </button>
                     </div>
 
                     <!-- 2. Borracha Líquida & Impermeabilizantes -->
-                    <div class="bg-white rounded-2xl p-6 border-2 border-brand-orange/40 shadow-sm hover-lift flex flex-col justify-between relative">
-                        <span class="absolute top-0 right-0 bg-brand-orange text-white text-[9px] font-heading font-black uppercase px-2.5 py-0.5 rounded-bl-lg">
+                    <div class="bg-white rounded-2xl p-7 border-2 border-brand-orange/40 shadow-sm hover-lift flex flex-col justify-between relative">
+                        <span class="absolute top-0 right-0 bg-brand-orange text-white text-xs font-heading font-black uppercase px-3 py-1 rounded-bl-lg">
                             Mais Procurado no Sul
                         </span>
                         <div>
-                            <div class="w-10 h-10 rounded-xl bg-orange-100 text-brand-orange flex items-center justify-center text-lg mb-3">🛡️</div>
-                            <h3 class="font-heading font-bold text-lg text-brand-navy mb-1.5">Borracha Líquida & Vedações</h3>
-                            <p class="text-slate-600 text-xs leading-relaxed mb-3">
+                            <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-orange flex items-center justify-center text-2xl mb-4">🛡️</div>
+                            <h3 class="font-heading font-bold text-xl text-brand-navy mb-2">Borracha Líquida & Vedações</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
                                 Barreira elástica impermeável contra batidas de chuva, fissuras e umidade em fachadas, lajes e telhados.
                             </p>
-                            <span class="text-[11px] font-heading font-semibold text-brand-orange block mb-4">Membrana flexível que acompanha a dilatação</span>
+                            <span class="text-xs sm:text-sm font-heading font-bold text-brand-orange block mb-5">Membrana flexível que acompanha a dilatação</span>
                         </div>
                         <button onclick="triggerWhatsApp('cat_impermeabilizante', 'Olá! Preciso de orçamento de Borracha Líquida ou Impermeabilizante.')" 
-                                class="w-full py-2.5 bg-brand-orange text-white hover:bg-orange-600 font-heading font-bold text-xs uppercase tracking-wider rounded-xl transition-colors shadow-sm">
+                                class="w-full py-3 bg-brand-orange text-white hover:bg-orange-600 font-heading font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl transition-colors shadow-sm">
                             Cotar Borracha Líquida →
                         </button>
                     </div>
 
                     <!-- 3. Esmaltes, Vernizes & Stains -->
-                    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+                    <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
                         <div>
-                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg mb-3">🪵</div>
-                            <h3 class="font-heading font-bold text-lg text-brand-navy mb-1.5">Esmaltes, Vernizes & Stains</h3>
-                            <p class="text-slate-600 text-xs leading-relaxed mb-3">
-                                Preservação nobre para decks e pergolados com filtros solares Montana Osmocolor e esmaltes antiferrugem para grades.
+                            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-2xl mb-4">🪵</div>
+                            <h3 class="font-heading font-bold text-xl text-brand-navy mb-2">Esmaltes, Vernizes & Stains</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Preservação nobre para decks e pergolados com filtros Montana Osmocolor e esmaltes antiferrugem para grades.
                             </p>
-                            <span class="text-[11px] font-heading font-semibold text-amber-700 block mb-4">Linhas à base d’água (sem cheiro) e sintéticas</span>
+                            <span class="text-xs sm:text-sm font-heading font-bold text-amber-700 block mb-5">Linhas à base d’água (sem cheiro) e sintéticas</span>
                         </div>
                         <button onclick="triggerWhatsApp('cat_esmaltes', 'Olá! Gostaria de cotar vernizes para madeira ou esmalte para metais.')" 
-                                class="w-full py-2.5 bg-slate-100 hover:bg-brand-blue hover:text-white text-brand-navy font-heading font-bold text-xs uppercase tracking-wider rounded-xl transition-colors">
+                                class="w-full py-3 bg-slate-100 hover:bg-brand-blue hover:text-white text-brand-navy font-heading font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl transition-colors">
                             Cotar Verniz & Esmalte →
                         </button>
                     </div>
 
                     <!-- 4. Preparação de Paredes -->
-                    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+                    <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
                         <div>
-                            <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center text-lg mb-3">🧱</div>
-                            <h3 class="font-heading font-bold text-lg text-brand-navy mb-1.5">Preparação de Paredes</h3>
-                            <p class="text-slate-600 text-xs leading-relaxed mb-3">
-                                Fundos preparadores, seladores, massas corridas e acrílicas para fixar o reboco e garantir que a tinta não descasque.
+                            <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center text-2xl mb-4">🧱</div>
+                            <h3 class="font-heading font-bold text-xl text-brand-navy mb-2">Preparação de Paredes</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Fundos preparadores, seladores e massas corridas para fixar o reboco e garantir que a tinta nunca descasque.
                             </p>
-                            <span class="text-[11px] font-heading font-semibold text-slate-600 block mb-4">A base correta para dobrar a durabilidade</span>
+                            <span class="text-xs sm:text-sm font-heading font-bold text-slate-700 block mb-5">A base correta para dobrar a durabilidade</span>
                         </div>
                         <button onclick="triggerWhatsApp('cat_preparacao', 'Olá! Gostaria de cotar fundos preparadores, selador ou massa corrida.')" 
-                                class="w-full py-2.5 bg-slate-100 hover:bg-brand-blue hover:text-white text-brand-navy font-heading font-bold text-xs uppercase tracking-wider rounded-xl transition-colors">
+                                class="w-full py-3 bg-slate-100 hover:bg-brand-blue hover:text-white text-brand-navy font-heading font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl transition-colors">
                             Cotar Fundos & Massas →
                         </button>
                     </div>
 
                     <!-- 5. Ferramentas & Acessórios -->
-                    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+                    <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
                         <div>
-                            <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-lg mb-3">🖌️</div>
-                            <h3 class="font-heading font-bold text-lg text-brand-navy mb-1.5">Ferramentas & Acessórios</h3>
-                            <p class="text-slate-600 text-xs leading-relaxed mb-3">
-                                Rolos de microfibra anti-respingo, trinchas especiais, fitas crepe de pintura limpa, lixas abrasivas e extensores.
+                            <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-2xl mb-4">🖌️</div>
+                            <h3 class="font-heading font-bold text-xl text-brand-navy mb-2">Ferramentas & Acessórios</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Rolos de microfibra anti-respingo, trinchas especiais, fitas crepe de pintura limpa, lixas e extensores.
                             </p>
-                            <span class="text-[11px] font-heading font-semibold text-purple-700 block mb-4">Linha profissional completa para pintores</span>
+                            <span class="text-xs sm:text-sm font-heading font-bold text-purple-700 block mb-5">Linha profissional completa para pintores</span>
                         </div>
                         <button onclick="triggerWhatsApp('cat_ferramentas', 'Olá! Preciso de acessórios de pintura (rolos, fitas, lixas).')" 
-                                class="w-full py-2.5 bg-slate-100 hover:bg-brand-blue hover:text-white text-brand-navy font-heading font-bold text-xs uppercase tracking-wider rounded-xl transition-colors">
+                                class="w-full py-3 bg-slate-100 hover:bg-brand-blue hover:text-white text-brand-navy font-heading font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl transition-colors">
                             Cotar Ferramentas →
                         </button>
                     </div>
 
                     <!-- 6. Escadas Multiuso -->
-                    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
+                    <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover-lift flex flex-col justify-between">
                         <div>
-                            <div class="w-10 h-10 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center text-lg mb-3">🪜</div>
-                            <h3 class="font-heading font-bold text-lg text-brand-navy mb-1.5">Escadas Multiuso até 150 kg</h3>
-                            <p class="text-slate-600 text-xs leading-relaxed mb-3">
-                                Alumínio reforçado com exclusivo suporte no topo para apoiar latas, trinchas e ferramentas com segurança.
+                            <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-blue flex items-center justify-center text-2xl mb-4">🪜</div>
+                            <h3 class="font-heading font-bold text-xl text-brand-navy mb-2">Escadas até 150 kg</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Alumínio reforçado com suporte exclusivo no topo para apoiar latas, trinchas e ferramentas com segurança.
                             </p>
-                            <span class="text-[11px] font-heading font-semibold text-brand-blue block mb-4">Segurança profissional para sua obra</span>
+                            <span class="text-xs sm:text-sm font-heading font-bold text-brand-blue block mb-5">Segurança profissional para sua obra</span>
                         </div>
                         <button onclick="triggerWhatsApp('cat_escadas', 'Olá! Gostaria de consultar valores das escadas reforçadas até 150kg.')" 
-                                class="w-full py-2.5 bg-slate-100 hover:bg-brand-blue hover:text-white text-brand-navy font-heading font-bold text-xs uppercase tracking-wider rounded-xl transition-colors">
+                                class="w-full py-3 bg-slate-100 hover:bg-brand-blue hover:text-white text-brand-navy font-heading font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl transition-colors">
                             Cotar Escadas →
                         </button>
                     </div>
@@ -510,63 +491,83 @@
             </div>
         </section>
 
-        <!-- 3. MARCAS CONFIRMADAS -->
-        <section id="marcas" class="py-12 px-4 sm:px-6 lg:px-8 bg-white border-b border-slate-200">
+        <!-- 3. MARCAS CONFIRMADAS COM LOGOS UNIFORMES E EQUILIBRADOS -->
+        <section id="marcas" class="py-14 px-4 sm:px-6 lg:px-8 bg-white border-b border-slate-200">
             <div class="max-w-7xl mx-auto">
                 <div class="flex flex-col md:flex-row items-center justify-between gap-4 mb-8">
                     <div>
-                        <span class="text-xs font-heading font-bold uppercase tracking-widest text-brand-blue">Procedência Garantida</span>
-                        <h2 class="font-heading font-black text-xl sm:text-2xl text-brand-navy mt-1">Trabalhamos com os líderes do setor:</h2>
+                        <span class="text-xs sm:text-sm font-heading font-bold uppercase tracking-widest text-brand-blue">Procedência Garantida</span>
+                        <h2 class="font-heading font-black text-2xl sm:text-3xl text-brand-navy mt-1">Trabalhamos com os líderes do setor:</h2>
                     </div>
-                    <span class="bg-brand-yellow/20 text-brand-navy border border-brand-yellow/40 text-xs font-heading font-bold px-3 py-1 rounded-full">
+                    <span class="bg-brand-yellow/20 text-brand-navy border border-brand-yellow/40 text-xs sm:text-sm font-heading font-bold px-3.5 py-1.5 rounded-full">
                         ★ TOP 10 Revenda Killing no RS
                     </span>
                 </div>
 
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 text-center">
-                    <!-- Killing -->
-                    <div class="p-5 rounded-2xl bg-white border border-slate-200/90 hover:border-brand-blue shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center group hover-lift min-h-[140px]">
-                        <div class="h-14 w-full flex items-center justify-center mb-2 px-2">
-                            <img src="tintaskilling-shoppingdastintas.png" 
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                    
+                    <!-- Card 1: Killing -->
+                    <div class="partner-card">
+                        <div class="partner-logo-box">
+                            <img src="killing.png" 
                                  alt="Tintas Killing - Kisacril" 
-                                 class="max-h-11 max-w-[140px] w-auto object-contain logo-blend transition-transform duration-300 group-hover:scale-105" 
-                                 onerror="this.onerror=null; this.src='https://placehold.co/160x50/ffffff/005596?text=Tintas+Killing';">
+                                 class="partner-logo-img"
+                                 onerror="this.onerror=null; this.src='tintaskilling-shoppingdastintas.png';">
                         </div>
-                        <span class="text-[10px] font-heading font-bold text-brand-blue uppercase tracking-wider">Kisacril Oficial</span>
+                        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-blue-50 text-xs font-heading font-bold text-brand-blue uppercase tracking-wider mt-3">
+                            Kisacril Oficial
+                        </span>
                     </div>
 
-                    <!-- Suvinil -->
-                    <div class="p-5 rounded-2xl bg-white border border-slate-200/90 hover:border-brand-orange shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center group hover-lift min-h-[140px]">
-                        <div class="h-14 w-full flex items-center justify-center mb-2 px-2">
-                            <img src="suvinil-shoppingdastintas.png" 
+                    <!-- Card 2: Suvinil -->
+                    <div class="partner-card">
+                        <div class="partner-logo-box">
+                            <img src="suvinil.png" 
                                  alt="Suvinil Tintas" 
-                                 class="max-h-10 max-w-[135px] w-auto object-contain logo-blend transition-transform duration-300 group-hover:scale-105" 
-                                 onerror="this.onerror=null; this.src='https://placehold.co/160x50/ffffff/e25a1e?text=Suvinil';">
+                                 class="partner-logo-img"
+                                 onerror="this.onerror=null; this.src='suvinil-shoppingdastintas.png';">
                         </div>
-                        <span class="text-[10px] font-heading font-bold text-brand-orange uppercase tracking-wider">Linha Completa</span>
+                        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-orange-50 text-xs font-heading font-bold text-brand-orange uppercase tracking-wider mt-3">
+                            Linha Completa
+                        </span>
                     </div>
 
-                    <!-- Coral -->
-                    <div class="p-5 rounded-2xl bg-white border border-slate-200/90 hover:border-blue-700 shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center group hover-lift min-h-[140px]">
-                        <div class="h-14 w-full flex items-center justify-center mb-2 px-2">
-                            <img src="coral-shoppingdastintas.png" 
+                    <!-- Card 3: Coral -->
+                    <div class="partner-card">
+                        <div class="partner-logo-box">
+                            <img src="coral.png" 
                                  alt="Tintas Coral" 
-                                 class="max-h-14 max-w-[125px] w-auto object-contain logo-blend transition-transform duration-300 group-hover:scale-105" 
-                                 onerror="this.onerror=null; this.src='https://placehold.co/160x50/ffffff/19326e?text=Coral';">
+                                 class="partner-logo-img"
+                                 onerror="this.onerror=null; this.src='coral-shoppingdastintas.png';">
                         </div>
-                        <span class="text-[10px] font-heading font-bold text-blue-700 uppercase tracking-wider">Coral Master</span>
+                        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-blue-50 text-xs font-heading font-bold text-blue-700 uppercase tracking-wider mt-3">
+                            Coral Master
+                        </span>
                     </div>
 
-                    <!-- Montana -->
-                    <div class="p-5 rounded-2xl bg-white border border-slate-200/90 hover:border-amber-700 shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center group hover-lift min-h-[140px]">
-                        <div class="h-14 w-full flex items-center justify-center mb-2 px-2">
-                            <img src="montana-shoppingdastintas.png" 
+                    <!-- Card 4: Montana (Tratamento para fundo branco límpido) -->
+                    <div class="partner-card">
+                        <div class="partner-logo-box">
+                            <img src="montana.png" 
                                  alt="Montana Química - Osmocolor" 
-                                 class="max-h-11 max-w-[135px] w-auto object-contain logo-blend transition-transform duration-300 group-hover:scale-105" 
-                                 onerror="this.onerror=null; this.src='https://placehold.co/160x50/ffffff/151c38?text=Montana';">
+                                 class="partner-logo-img"
+                                 onerror="this.onerror=null; this.src='montana.jpg'; this.classList.add('montana-jpg-clean'); this.onerror=function(){ this.style.display='none'; document.getElementById('montana-svg-box').style.display='flex'; };">
+                            
+                            <!-- Fallback em SVG Vetorial caso o arquivo jpg não encontre o png transparente -->
+                            <div id="montana-svg-box" style="display:none;" class="w-full h-full items-center justify-center">
+                                <svg viewBox="0 0 260 70" class="max-h-12 w-auto">
+                                    <text x="130" y="38" font-family="'Inter', Arial, sans-serif" font-size="38" font-weight="900" fill="#0A1833" text-anchor="middle" letter-spacing="-0.5">montana<tspan font-size="14" dy="-18">®</tspan></text>
+                                    <path d="M 20 46 Q 130 58 240 46" stroke="#0A1833" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                    <path d="M 30 52 Q 130 62 230 52" stroke="#889BB0" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                    <text x="130" y="65" font-family="'Inter', Arial, sans-serif" font-size="13" font-weight="700" font-style="italic" fill="#0A1833" text-anchor="middle">Ideal para sua madeira</text>
+                                </svg>
+                            </div>
                         </div>
-                        <span class="text-[10px] font-heading font-bold text-amber-700 uppercase tracking-wider">Osmocolor Stains</span>
+                        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-50 text-xs font-heading font-bold text-amber-800 uppercase tracking-wider mt-3">
+                            Osmocolor Stains
+                        </span>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -577,27 +578,27 @@
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                     
                     <div class="lg:col-span-5">
-                        <span class="text-xs font-heading font-bold uppercase tracking-widest text-brand-yellow">Cálculo Preciso</span>
+                        <span class="text-xs sm:text-sm font-heading font-bold uppercase tracking-widest text-brand-yellow">Cálculo Preciso</span>
                         <h2 class="font-heading font-black text-2xl sm:text-3xl text-white mt-1 mb-3">
                             Calcule a tinta sem sobras na garagem.
                         </h2>
-                        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed mb-5">
-                            Informe a metragem aproximada e veja a sugestão ideal de embalagens para 2 demãos completas:
+                        <p class="text-slate-200 text-sm sm:text-base leading-relaxed mb-5">
+                            Informe a metragem e veja a sugestão ideal de embalagens para 2 demãos completas:
                         </p>
 
-                        <div class="space-y-2.5 text-xs text-slate-200 mb-6">
+                        <div class="space-y-3 text-sm text-slate-200 mb-6 font-medium">
                             <div class="flex items-center gap-2">
-                                <span class="text-brand-yellow font-bold">✓</span>
+                                <span class="text-brand-yellow font-bold text-base">✓</span>
                                 <span>Rendimento real baseado nos catálogos técnicos</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span class="text-brand-yellow font-bold">✓</span>
+                                <span class="text-brand-yellow font-bold text-base">✓</span>
                                 <span>Envio direto do cálculo para cotação no WhatsApp</span>
                             </div>
                         </div>
 
                         <button onclick="triggerWhatsApp('bloco_consultoria_duvida', 'Olá! Gostaria de ajuda para calcular a quantidade de tinta para minha obra.')" 
-                                class="inline-flex items-center gap-2 bg-brand-yellow hover:bg-yellow-400 text-brand-dark font-heading font-black text-xs uppercase tracking-wider px-5 py-3 rounded-xl transition-all">
+                                class="inline-flex items-center gap-2 bg-brand-yellow hover:bg-yellow-400 text-brand-dark font-heading font-black text-xs sm:text-sm uppercase tracking-wider px-6 py-3.5 rounded-xl transition-all">
                             <span>Falar com Consultor</span>
                             <span>→</span>
                         </button>
@@ -605,18 +606,18 @@
 
                     <!-- Card Formulário Calculadora -->
                     <div class="lg:col-span-7">
-                        <div class="bg-white text-slate-800 rounded-2xl p-6 sm:p-7 shadow-xl">
+                        <div class="bg-white text-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl">
                             
-                            <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
-                                <h3 class="font-heading font-black text-lg text-brand-navy">Simulador de Litragem</h3>
-                                <span class="bg-amber-100 text-amber-800 font-heading font-bold text-[10px] uppercase px-2 py-0.5 rounded">Rápido</span>
+                            <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-5">
+                                <h3 class="font-heading font-black text-xl text-brand-navy">Simulador de Litragem</h3>
+                                <span class="bg-amber-100 text-amber-800 font-heading font-bold text-xs uppercase px-2.5 py-1 rounded">Rápido</span>
                             </div>
 
-                            <form id="paintCalcForm" onsubmit="calculatePaint(event)" class="space-y-3.5">
-                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <form id="paintCalcForm" onsubmit="calculatePaint(event)" class="space-y-4">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div>
-                                        <label class="block text-[11px] font-heading font-bold uppercase text-slate-600 mb-1">Superfície</label>
-                                        <select id="calcSuperficie" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:outline-none focus:border-brand-blue">
+                                        <label class="block text-xs sm:text-sm font-heading font-bold uppercase text-slate-700 mb-1.5">Superfície</label>
+                                        <select id="calcSuperficie" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm text-slate-800 focus:outline-none focus:border-brand-blue">
                                             <option value="interna">Paredes Internas (Sala, Quarto)</option>
                                             <option value="externa">Fachada Externa</option>
                                             <option value="impermeabilizacao">Laje / Borracha Líquida</option>
@@ -624,34 +625,34 @@
                                         </select>
                                     </div>
                                     <div>
-                                        <label class="block text-[11px] font-heading font-bold uppercase text-slate-600 mb-1">Área Total (m²)</label>
+                                        <label class="block text-xs sm:text-sm font-heading font-bold uppercase text-slate-700 mb-1.5">Área Total (m²)</label>
                                         <input type="number" id="calcArea" placeholder="Ex: 45" min="1" max="5000" required 
-                                               class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:outline-none focus:border-brand-blue">
+                                               class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm text-slate-800 focus:outline-none focus:border-brand-blue">
                                     </div>
                                 </div>
 
-                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 items-end">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-end">
                                     <div>
-                                        <label class="block text-[11px] font-heading font-bold uppercase text-slate-600 mb-1">Demãos</label>
-                                        <select id="calcDemaos" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:outline-none focus:border-brand-blue">
+                                        <label class="block text-xs sm:text-sm font-heading font-bold uppercase text-slate-700 mb-1.5">Demãos</label>
+                                        <select id="calcDemaos" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm text-slate-800 focus:outline-none focus:border-brand-blue">
                                             <option value="2">2 Demãos (Padrão)</option>
                                             <option value="3">3 Demãos (Troca de cor / Novo)</option>
                                         </select>
                                     </div>
-                                    <button type="submit" class="w-full bg-brand-blue hover:bg-blue-700 text-white font-heading font-bold text-xs uppercase tracking-wider py-2.5 px-4 rounded-lg transition-all shadow">
+                                    <button type="submit" class="w-full bg-brand-blue hover:bg-blue-700 text-white font-heading font-bold text-sm uppercase tracking-wider py-3 px-4 rounded-xl transition-all shadow">
                                         Calcular Litros
                                     </button>
                                 </div>
                             </form>
 
-                            <div id="calcResult" class="hidden mt-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <div id="calcResult" class="hidden mt-5 p-4 rounded-xl bg-slate-50 border border-slate-200">
                                 <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
                                     <div>
-                                        <p class="text-[10px] font-heading font-bold uppercase text-brand-blue">Estimativa de Consumo</p>
-                                        <p class="text-xl font-heading font-black text-brand-navy" id="calcLitrosResult">0 Litros</p>
-                                        <p class="text-xs text-slate-600" id="calcEmbalagemSugestao">Sugestão de embalagens</p>
+                                        <p class="text-xs font-heading font-bold uppercase text-brand-blue">Estimativa de Consumo</p>
+                                        <p class="text-2xl font-heading font-black text-brand-navy" id="calcLitrosResult">0 Litros</p>
+                                        <p class="text-sm text-slate-600 font-medium" id="calcEmbalagemSugestao">Sugestão de embalagens</p>
                                     </div>
-                                    <button onclick="sendCalculatedWhatsApp()" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1faa4f] text-white text-xs font-heading font-bold px-4 py-2.5 rounded-lg shadow transition-all">
+                                    <button onclick="sendCalculatedWhatsApp()" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1faa4f] text-white text-sm font-heading font-bold px-5 py-3 rounded-xl shadow transition-all">
                                         <span>Cotar no WhatsApp</span>
                                         <span>→</span>
                                     </button>
@@ -671,24 +672,24 @@
                 
                 <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
                     <div>
-                        <div class="inline-flex items-center gap-2 bg-white px-3.5 py-1 rounded-full shadow-sm border border-slate-200 mb-2">
-                            <span class="text-brand-yellow text-sm">★★★★★</span>
-                            <span class="text-xs font-heading font-extrabold text-brand-navy">4,9 DE 5 NO GOOGLE</span>
-                            <span class="text-xs text-slate-500">(+235 Avaliações)</span>
+                        <div class="inline-flex items-center gap-2 bg-white px-4 py-1.5 rounded-full shadow-sm border border-slate-200 mb-2.5">
+                            <span class="text-brand-yellow text-base">★★★★★</span>
+                            <span class="text-xs sm:text-sm font-heading font-extrabold text-brand-navy">4,9 DE 5 NO GOOGLE</span>
+                            <span class="text-xs sm:text-sm text-slate-500">(+235 Avaliações)</span>
                         </div>
-                        <h2 class="font-heading font-black text-2xl sm:text-3xl text-brand-navy">
+                        <h2 class="font-heading font-black text-2xl sm:text-4xl text-brand-navy">
                             Quem compra em Sapiranga aprova.
                         </h2>
                     </div>
 
                     <!-- Controles do Carrossel -->
-                    <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-2.5">
                         <button onclick="prevReview()" aria-label="Avaliação anterior" 
-                                class="w-10 h-10 rounded-xl bg-white hover:bg-slate-100 text-brand-navy flex items-center justify-center font-bold text-base transition-all active:scale-95 border border-slate-300 shadow-sm">
+                                class="w-11 h-11 rounded-xl bg-white hover:bg-slate-100 text-brand-navy flex items-center justify-center font-bold text-lg transition-all active:scale-95 border border-slate-300 shadow-sm">
                             ←
                         </button>
                         <button onclick="nextReview()" aria-label="Próxima avaliação" 
-                                class="w-10 h-10 rounded-xl bg-brand-blue hover:bg-blue-700 text-white flex items-center justify-center font-bold text-base transition-all active:scale-95 shadow-md">
+                                class="w-11 h-11 rounded-xl bg-brand-blue hover:bg-blue-700 text-white flex items-center justify-center font-bold text-lg transition-all active:scale-95 shadow-md">
                             →
                         </button>
                     </div>
@@ -699,105 +700,105 @@
                     <div id="reviewsTrack" class="flex transition-transform duration-500 ease-out gap-5">
                         
                         <!-- Card 1 -->
-                        <div class="review-slide w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] shrink-0 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover-lift select-none">
+                        <div class="review-slide w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] shrink-0 bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover-lift select-none">
                             <div>
-                                <div class="flex items-center justify-between mb-3">
-                                    <div class="flex text-brand-yellow text-xs">★★★★★</div>
-                                    <span class="text-[10px] font-semibold text-slate-400 uppercase">Google</span>
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex text-brand-yellow text-sm">★★★★★</div>
+                                    <span class="text-xs font-semibold text-slate-400 uppercase">Google</span>
                                 </div>
-                                <p class="text-slate-700 text-xs sm:text-sm leading-relaxed italic mb-5">
+                                <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic mb-6">
                                     "Melhor loja de Sapiranga! Tive dúvida sobre a cor da sala e a equipe me ajudou no leque. Fizeram na máquina na hora e a entrega no Centro foi rápida."
                                 </p>
                             </div>
-                            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
                                 <div>
-                                    <p class="font-heading font-bold text-brand-navy">Mariana Silveira</p>
-                                    <p class="text-[10px] text-slate-500">Cliente Residencial</p>
+                                    <p class="font-heading font-bold text-sm text-brand-navy">Mariana Silveira</p>
+                                    <p class="text-xs text-slate-500">Cliente Residencial</p>
                                 </div>
-                                <span class="w-6 h-6 rounded-full bg-blue-50 text-brand-blue flex items-center justify-center font-bold text-xs">G</span>
+                                <span class="w-7 h-7 rounded-full bg-blue-50 text-brand-blue flex items-center justify-center font-bold text-xs">G</span>
                             </div>
                         </div>
 
                         <!-- Card 2 -->
-                        <div class="review-slide w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] shrink-0 bg-white p-6 rounded-2xl border-2 border-brand-blue/30 shadow-sm flex flex-col justify-between hover-lift select-none relative">
-                            <span class="absolute -top-2.5 right-4 bg-brand-blue text-white text-[9px] font-heading font-bold uppercase px-2 py-0.5 rounded-full">
+                        <div class="review-slide w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] shrink-0 bg-white p-7 rounded-2xl border-2 border-brand-blue/30 shadow-sm flex flex-col justify-between hover-lift select-none relative">
+                            <span class="absolute -top-3 right-5 bg-brand-blue text-white text-xs font-heading font-bold uppercase px-3 py-0.5 rounded-full">
                                 Pintor Parceiro
                             </span>
                             <div>
-                                <div class="flex items-center justify-between mb-3">
-                                    <div class="flex text-brand-yellow text-xs">★★★★★</div>
-                                    <span class="text-[10px] font-semibold text-slate-400 uppercase">Google</span>
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex text-brand-yellow text-sm">★★★★★</div>
+                                    <span class="text-xs font-semibold text-slate-400 uppercase">Google</span>
                                 </div>
-                                <p class="text-slate-700 text-xs sm:text-sm leading-relaxed italic mb-5">
+                                <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic mb-6">
                                     "Pintor profissional há mais de 10 anos. Mando a lista pelo WhatsApp e quando passo na loja já está tudo separado no balcão. Rendimento excelente das tintas."
                                 </p>
                             </div>
-                            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
                                 <div>
-                                    <p class="font-heading font-bold text-brand-navy">Carlos E. Hoffmann</p>
-                                    <p class="text-[10px] text-brand-blue font-semibold">Pintor Profissional</p>
+                                    <p class="font-heading font-bold text-sm text-brand-navy">Carlos E. Hoffmann</p>
+                                    <p class="text-xs text-brand-blue font-bold">Pintor Profissional</p>
                                 </div>
-                                <span class="w-6 h-6 rounded-full bg-blue-50 text-brand-blue flex items-center justify-center font-bold text-xs">G</span>
+                                <span class="w-7 h-7 rounded-full bg-blue-50 text-brand-blue flex items-center justify-center font-bold text-xs">G</span>
                             </div>
                         </div>
 
                         <!-- Card 3 -->
-                        <div class="review-slide w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] shrink-0 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover-lift select-none">
+                        <div class="review-slide w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] shrink-0 bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover-lift select-none">
                             <div>
-                                <div class="flex items-center justify-between mb-3">
-                                    <div class="flex text-brand-yellow text-xs">★★★★★</div>
-                                    <span class="text-[10px] font-semibold text-slate-400 uppercase">Google</span>
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex text-brand-yellow text-sm">★★★★★</div>
+                                    <span class="text-xs font-semibold text-slate-400 uppercase">Google</span>
                                 </div>
-                                <p class="text-slate-700 text-xs sm:text-sm leading-relaxed italic mb-5">
+                                <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic mb-6">
                                     "Estava com umidade na parede do quarto e nenhuma tinta segurava. Me indicaram o fundo selador e a borracha líquida certa. Acabou o problema de mofo."
                                 </p>
                             </div>
-                            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
                                 <div>
-                                    <p class="font-heading font-bold text-brand-navy">Rodrigo M. Fagundes</p>
-                                    <p class="text-[10px] text-slate-500">Bairro São Luiz</p>
+                                    <p class="font-heading font-bold text-sm text-brand-navy">Rodrigo M. Fagundes</p>
+                                    <p class="text-xs text-slate-500">Bairro São Luiz</p>
                                 </div>
-                                <span class="w-6 h-6 rounded-full bg-blue-50 text-brand-blue flex items-center justify-center font-bold text-xs">G</span>
+                                <span class="w-7 h-7 rounded-full bg-blue-50 text-brand-blue flex items-center justify-center font-bold text-xs">G</span>
                             </div>
                         </div>
 
                         <!-- Card 4 -->
-                        <div class="review-slide w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] shrink-0 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover-lift select-none">
+                        <div class="review-slide w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] shrink-0 bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover-lift select-none">
                             <div>
-                                <div class="flex items-center justify-between mb-3">
-                                    <div class="flex text-brand-yellow text-xs">★★★★★</div>
-                                    <span class="text-[10px] font-semibold text-slate-400 uppercase">Google</span>
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex text-brand-yellow text-sm">★★★★★</div>
+                                    <span class="text-xs font-semibold text-slate-400 uppercase">Google</span>
                                 </div>
-                                <p class="text-slate-700 text-xs sm:text-sm leading-relaxed italic mb-5">
+                                <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic mb-6">
                                     "Especifico cores nos meus projetos de interiores e a calibração da máquina tintométrica deles é impecável. Atendimento técnico que passa total confiança."
                                 </p>
                             </div>
-                            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
                                 <div>
-                                    <p class="font-heading font-bold text-brand-navy">Patrícia Klein</p>
-                                    <p class="text-[10px] text-amber-700 font-semibold">Arquiteta de Interiores</p>
+                                    <p class="font-heading font-bold text-sm text-brand-navy">Patrícia Klein</p>
+                                    <p class="text-xs text-amber-700 font-bold">Arquiteta de Interiores</p>
                                 </div>
-                                <span class="w-6 h-6 rounded-full bg-blue-50 text-brand-blue flex items-center justify-center font-bold text-xs">G</span>
+                                <span class="w-7 h-7 rounded-full bg-blue-50 text-brand-blue flex items-center justify-center font-bold text-xs">G</span>
                             </div>
                         </div>
 
                         <!-- Card 5 -->
-                        <div class="review-slide w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] shrink-0 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover-lift select-none">
+                        <div class="review-slide w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] shrink-0 bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover-lift select-none">
                             <div>
-                                <div class="flex items-center justify-between mb-3">
-                                    <div class="flex text-brand-yellow text-xs">★★★★★</div>
-                                    <span class="text-[10px] font-semibold text-slate-400 uppercase">Google</span>
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex text-brand-yellow text-sm">★★★★★</div>
+                                    <span class="text-xs font-semibold text-slate-400 uppercase">Google</span>
                                 </div>
-                                <p class="text-slate-700 text-xs sm:text-sm leading-relaxed italic mb-5">
+                                <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic mb-6">
                                     "Calcularam a metragem exata para minha reforma, sem sobrar latas na garagem. Preço justo, café quentinho e equipe muito atenciosa."
                                 </p>
                             </div>
-                            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
                                 <div>
-                                    <p class="font-heading font-bold text-brand-navy">Juliano Dutra</p>
-                                    <p class="text-[10px] text-slate-500">Bairro Centenário</p>
+                                    <p class="font-heading font-bold text-sm text-brand-navy">Juliano Dutra</p>
+                                    <p class="text-xs text-slate-500">Bairro Centenário</p>
                                 </div>
-                                <span class="w-6 h-6 rounded-full bg-blue-50 text-brand-blue flex items-center justify-center font-bold text-xs">G</span>
+                                <span class="w-7 h-7 rounded-full bg-blue-50 text-brand-blue flex items-center justify-center font-bold text-xs">G</span>
                             </div>
                         </div>
 
@@ -806,12 +807,12 @@
 
                 <!-- Dots e Link Google Maps -->
                 <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mt-6 pt-4 border-t border-slate-200">
-                    <div class="flex items-center gap-1.5" id="carouselDots">
+                    <div class="flex items-center gap-2" id="carouselDots">
                         <!-- Gerados via JavaScript -->
                     </div>
 
                     <a href="https://maps.app.goo.gl/ChIJ-VWBkWQ_GZURak5dnkU_pr4" target="_blank" rel="noopener noreferrer" 
-                       class="text-xs font-heading font-bold text-brand-blue hover:underline uppercase tracking-wider inline-flex items-center gap-1">
+                       class="text-xs sm:text-sm font-heading font-bold text-brand-blue hover:underline uppercase tracking-wider inline-flex items-center gap-1.5">
                         <span>Ver todas as avaliações no Google Maps</span>
                         <span>↗</span>
                     </a>
@@ -825,35 +826,35 @@
             <div class="max-w-7xl mx-auto">
                 
                 <div class="text-center max-w-xl mx-auto mb-10">
-                    <span class="text-xs font-heading font-bold uppercase tracking-widest text-brand-blue">Tradição & Confiança</span>
+                    <span class="text-xs sm:text-sm font-heading font-bold uppercase tracking-widest text-brand-blue">Tradição & Confiança</span>
                     <h2 class="font-heading font-black text-2xl sm:text-3xl text-brand-navy mt-1">
                         Há 16 anos sendo a referência em Sapiranga
                     </h2>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 text-center">
-                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 hover-lift">
-                        <div class="w-10 h-10 mx-auto rounded-full bg-blue-100 text-brand-blue flex items-center justify-center text-lg mb-3">⚡</div>
-                        <h3 class="font-heading font-bold text-sm text-brand-navy mb-1">Máquina Tintométrica</h3>
-                        <p class="text-xs text-slate-600">+2.000 cores preparadas e misturadas na hora em 5 minutos.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 text-center">
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover-lift">
+                        <div class="w-12 h-12 mx-auto rounded-full bg-blue-100 text-brand-blue flex items-center justify-center text-2xl mb-3">⚡</div>
+                        <h3 class="font-heading font-bold text-base text-brand-navy mb-1.5">Máquina Tintométrica</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">+2.000 cores preparadas e misturadas na hora em 5 minutos.</p>
                     </div>
 
-                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 hover-lift">
-                        <div class="w-10 h-10 mx-auto rounded-full bg-green-100 text-green-700 flex items-center justify-center text-lg mb-3">🚚</div>
-                        <h3 class="font-heading font-bold text-sm text-brand-navy mb-1">Entrega Rápida Sapiranga</h3>
-                        <p class="text-xs text-slate-600">Direto no canteiro da obra para o pintor não ficar parado.</p>
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover-lift">
+                        <div class="w-12 h-12 mx-auto rounded-full bg-green-100 text-green-700 flex items-center justify-center text-2xl mb-3">🚚</div>
+                        <h3 class="font-heading font-bold text-base text-brand-navy mb-1.5">Entrega Rápida Sapiranga</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Direto no canteiro da obra para o pintor não ficar parado.</p>
                     </div>
 
-                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 hover-lift">
-                        <div class="w-10 h-10 mx-auto rounded-full bg-amber-100 text-amber-700 flex items-center justify-center text-lg mb-3">🤝</div>
-                        <h3 class="font-heading font-bold text-sm text-brand-navy mb-1">Consultoria Técnica</h3>
-                        <p class="text-xs text-slate-600">Orientação certa contra umidade e mofo antes de aplicar a tinta.</p>
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover-lift">
+                        <div class="w-12 h-12 mx-auto rounded-full bg-amber-100 text-amber-700 flex items-center justify-center text-2xl mb-3">🤝</div>
+                        <h3 class="font-heading font-bold text-base text-brand-navy mb-1.5">Consultoria Técnica</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Orientação certa contra umidade e mofo antes de aplicar a tinta.</p>
                     </div>
 
-                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 hover-lift">
-                        <div class="w-10 h-10 mx-auto rounded-full bg-red-100 text-red-600 flex items-center justify-center text-lg mb-3">🎖️</div>
-                        <h3 class="font-heading font-bold text-sm text-brand-navy mb-1">TOP 10 Killing RS</h3>
-                        <p class="text-xs text-slate-600">Revenda oficial com lote direto de fábrica e condição justa.</p>
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover-lift">
+                        <div class="w-12 h-12 mx-auto rounded-full bg-red-100 text-red-600 flex items-center justify-center text-2xl mb-3">🎖️</div>
+                        <h3 class="font-heading font-bold text-base text-brand-navy mb-1.5">TOP 10 Killing RS</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Revenda oficial com lote direto de fábrica e condição justa.</p>
                     </div>
                 </div>
 
@@ -866,23 +867,23 @@
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                     
                     <div class="lg:col-span-5">
-                        <span class="text-xs font-heading font-bold uppercase tracking-widest text-brand-blue">Visite Nossa Loja</span>
+                        <span class="text-xs sm:text-sm font-heading font-bold uppercase tracking-widest text-brand-blue">Visite Nossa Loja</span>
                         <h2 class="font-heading font-black text-2xl sm:text-3xl text-brand-navy mt-1 mb-5">
                             Venha tomar um café no Centro de Sapiranga.
                         </h2>
 
-                        <div class="space-y-4 text-xs sm:text-sm text-slate-700 mb-6">
+                        <div class="space-y-4 text-sm sm:text-base text-slate-700 mb-6">
                             <div class="flex items-start gap-3">
-                                <span class="text-base">📍</span>
+                                <span class="text-xl">📍</span>
                                 <div>
                                     <p class="font-heading font-bold text-slate-900">Endereço Oficial</p>
                                     <p class="text-slate-600">R. Pres. Kennedy, 543 - Sl 02 - Centro, Sapiranga - RS</p>
-                                    <p class="text-[11px] text-slate-400">Estacionamento fácil em frente à loja</p>
+                                    <p class="text-xs text-slate-400 mt-0.5">Estacionamento fácil em frente à loja</p>
                                 </div>
                             </div>
 
                             <div class="flex items-start gap-3">
-                                <span class="text-base">🕒</span>
+                                <span class="text-xl">🕒</span>
                                 <div>
                                     <p class="font-heading font-bold text-slate-900">Horário de Atendimento</p>
                                     <p class="text-slate-600">Seg a Sex: <strong>07:30 às 11:30</strong> e <strong>13:00 às 18:25</strong></p>
@@ -891,22 +892,22 @@
                             </div>
 
                             <div class="flex items-start gap-3">
-                                <span class="text-base">📞</span>
+                                <span class="text-xl">📞</span>
                                 <div>
                                     <p class="font-heading font-bold text-slate-900">Telefone & WhatsApp</p>
-                                    <p class="text-slate-900 font-semibold">(51) 99261-1901</p>
+                                    <p class="text-slate-900 font-bold">(51) 99261-1901</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="flex gap-3">
                             <a href="https://maps.app.goo.gl/ChIJ-VWBkWQ_GZURak5dnkU_pr4" target="_blank" rel="noopener noreferrer" 
-                               class="inline-flex items-center gap-2 bg-brand-navy hover:bg-slate-800 text-white font-heading font-bold text-xs uppercase px-5 py-3 rounded-xl shadow transition-all">
+                               class="inline-flex items-center gap-2 bg-brand-navy hover:bg-slate-800 text-white font-heading font-bold text-xs sm:text-sm uppercase px-6 py-3.5 rounded-xl shadow transition-all">
                                 <span>Abrir no Maps</span>
                                 <span>↗</span>
                             </a>
                             <button onclick="triggerWhatsApp('local_duvida', 'Olá! Gostaria de saber como chegar na loja de Sapiranga.')" 
-                                    class="inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-heading font-bold text-xs uppercase px-5 py-3 rounded-xl transition-all">
+                                    class="inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-heading font-bold text-xs sm:text-sm uppercase px-6 py-3.5 rounded-xl transition-all">
                                 <span>WhatsApp</span>
                             </button>
                         </div>
@@ -930,55 +931,55 @@
             </div>
         </section>
 
-        <!-- 8. FAQ PENSADO NAS BUSCAS (ENXUTO) -->
+        <!-- 8. FAQ PENSADO NAS BUSCAS -->
         <section id="faq" class="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50 border-b border-slate-200">
             <div class="max-w-3xl mx-auto">
                 
                 <div class="text-center mb-10">
-                    <span class="text-xs font-heading font-bold uppercase tracking-widest text-brand-blue">Tire Suas Dúvidas</span>
+                    <span class="text-xs sm:text-sm font-heading font-bold uppercase tracking-widest text-brand-blue">Tire Suas Dúvidas</span>
                     <h2 class="font-heading font-black text-2xl sm:text-3xl text-brand-navy mt-1">
                         Perguntas frequentes sobre pintura
                     </h2>
                 </div>
 
-                <div class="space-y-3">
+                <div class="space-y-3.5">
                     
                     <div class="border border-slate-200 rounded-xl bg-white overflow-hidden shadow-sm">
-                        <button onclick="toggleFaq(this)" class="w-full text-left p-4 sm:p-5 flex items-center justify-between text-brand-navy font-heading font-bold text-sm">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex items-center justify-between text-brand-navy font-heading font-bold text-base sm:text-lg">
                             <span>Quantos litros de tinta preciso para um cômodo?</span>
-                            <span class="text-brand-blue text-xl font-bold faq-icon">+</span>
+                            <span class="text-brand-blue text-2xl font-bold faq-icon">+</span>
                         </button>
-                        <div class="faq-content hidden px-5 pb-5 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        <div class="faq-content hidden px-5 pb-5 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
                             Um galão de 3,6L cobre em média de 20 a 25 m² com 2 demãos (tamanho padrão de um quarto). Para áreas maiores, as latas de 18L são mais econômicas. Mande as medidas no nosso WhatsApp que calculamos a fração exata.
                         </div>
                     </div>
 
                     <div class="border border-slate-200 rounded-xl bg-white overflow-hidden shadow-sm">
-                        <button onclick="toggleFaq(this)" class="w-full text-left p-4 sm:p-5 flex items-center justify-between text-brand-navy font-heading font-bold text-sm">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex items-center justify-between text-brand-navy font-heading font-bold text-base sm:text-lg">
                             <span>Qual a diferença entre acabamento Fosco, Acetinado e Semibrilho?</span>
-                            <span class="text-brand-blue text-xl font-bold faq-icon">+</span>
+                            <span class="text-brand-blue text-2xl font-bold faq-icon">+</span>
                         </button>
-                        <div class="faq-content hidden px-5 pb-5 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        <div class="faq-content hidden px-5 pb-5 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
                             <strong>Fosco</strong> disfarça ondulações da parede (ideal para salas e tetos). <strong>Acetinado</strong> tem toque aveludado suave e fácil limpeza. <strong>Semibrilho</strong> é impermeável e super lavável, indicado para banheiros, lavabos e cozinhas.
                         </div>
                     </div>
 
                     <div class="border border-slate-200 rounded-xl bg-white overflow-hidden shadow-sm">
-                        <button onclick="toggleFaq(this)" class="w-full text-left p-4 sm:p-5 flex items-center justify-between text-brand-navy font-heading font-bold text-sm">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex items-center justify-between text-brand-navy font-heading font-bold text-base sm:text-lg">
                             <span>Como resolver de vez o mofo e a umidade na parede?</span>
-                            <span class="text-brand-blue text-xl font-bold faq-icon">+</span>
+                            <span class="text-brand-blue text-2xl font-bold faq-icon">+</span>
                         </button>
-                        <div class="faq-content hidden px-5 pb-5 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        <div class="faq-content hidden px-5 pb-5 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
                             Nunca passe tinta comum diretamente sobre o fungo. Primeiro higienize com solução fungicida, sele a alvenaria e aplique borracha líquida elástica em fachadas expostas à batida de chuva.
                         </div>
                     </div>
 
                     <div class="border border-slate-200 rounded-xl bg-white overflow-hidden shadow-sm">
-                        <button onclick="toggleFaq(this)" class="w-full text-left p-4 sm:p-5 flex items-center justify-between text-brand-navy font-heading font-bold text-sm">
+                        <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex items-center justify-between text-brand-navy font-heading font-bold text-base sm:text-lg">
                             <span>Preparam cores na hora e entregam em Sapiranga?</span>
-                            <span class="text-brand-blue text-xl font-bold faq-icon">+</span>
+                            <span class="text-brand-blue text-2xl font-bold faq-icon">+</span>
                         </button>
-                        <div class="faq-content hidden px-5 pb-5 text-xs text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                        <div class="faq-content hidden px-5 pb-5 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
                             Sim! Preparamos mais de 2.000 tons em 5 minutos na máquina tintométrica digital e entregamos rapidamente no canteiro da sua obra em qualquer bairro de Sapiranga.
                         </div>
                     </div>
@@ -991,24 +992,24 @@
         <!-- 9. CTA FINAL DE ALTA CONVERSÃO -->
         <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-brand-navy via-brand-blue to-brand-navy text-white text-center relative overflow-hidden">
             <div class="max-w-3xl mx-auto relative z-10">
-                <span class="inline-block px-3 py-1 bg-brand-yellow text-brand-dark font-heading font-black text-xs uppercase tracking-widest rounded-full mb-3">
+                <span class="inline-block px-3.5 py-1 bg-brand-yellow text-brand-dark font-heading font-black text-xs uppercase tracking-widest rounded-full mb-3.5">
                     Atendimento Imediato Sapiranga
                 </span>
-                <h2 class="font-heading font-black text-3xl sm:text-4xl text-white tracking-tight mb-3">
+                <h2 class="font-heading font-black text-3xl sm:text-5xl text-white tracking-tight mb-3">
                     Seu projeto de pintura começa no WhatsApp.
                 </h2>
-                <p class="text-slate-200 text-xs sm:text-sm max-w-xl mx-auto mb-7 font-light leading-relaxed">
+                <p class="text-slate-200 text-sm sm:text-base max-w-xl mx-auto mb-8 font-normal leading-relaxed">
                     Envie a lista do seu pintor, foto da sua parede ou a cor desejada para orçamento rápido com nossa equipe.
                 </p>
 
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5">
                     <button onclick="triggerWhatsApp('cta_final', 'Olá! Gostaria de pedir um orçamento com o time do Shopping das Tintas Sapiranga!')" 
-                            class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#25D366] hover:bg-[#1faa4f] text-white font-heading font-black text-xs uppercase tracking-wider px-8 py-4 rounded-xl shadow-xl transition-all active:scale-95">
+                            class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#25D366] hover:bg-[#1faa4f] text-white font-heading font-black text-sm uppercase tracking-wider px-9 py-4 rounded-xl shadow-xl transition-all active:scale-95">
                         <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                         <span>Chamar no WhatsApp Sapiranga</span>
                     </button>
                     <a href="tel:51992611901" 
-                       class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-heading font-semibold text-xs px-6 py-4 rounded-xl border border-white/20 transition-all">
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-heading font-semibold text-sm px-7 py-4 rounded-xl border border-white/20 transition-all">
                         <span>Ligar: (51) 99261-1901</span>
                     </a>
                 </div>
@@ -1017,28 +1018,22 @@
     </main>
 
     <!-- FOOTER INSTITUCIONAL -->
-    <footer class="bg-brand-dark text-slate-400 py-10 px-4 sm:px-6 lg:px-8 border-t border-slate-800 text-xs">
+    <footer class="bg-brand-dark text-slate-300 py-12 px-4 sm:px-6 lg:px-8 border-t border-slate-800 text-sm">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-            <div class="flex items-center gap-3">
-                <svg class="w-6 h-8 shrink-0 opacity-80" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <polygon points="0,0 4,0 4,30 0,32" fill="#1364F1"/>
-                    <polygon points="4,0 8,0 8,28 4,30" fill="#E53935"/>
-                    <polygon points="8,0 12,0 12,26 8,28" fill="#FDB723"/>
-                    <polygon points="12,0 16,0 16,28 12,26" fill="#252678"/>
-                    <polygon points="16,0 20,0 20,30 16,28" fill="#2E7D32"/>
-                    <polygon points="20,0 24,0 24,32 20,30" fill="#FD792E"/>
-                </svg>
+            <div class="flex items-center gap-4">
+                <div class="bg-[#080d1a] px-3.5 py-2 rounded-xl border border-slate-800 flex items-center justify-center">
+                    <img src="shopping-das-tintas.jpg" 
+                         alt="Shopping das Tintas Sapiranga" 
+                         class="h-10 sm:h-12 w-auto object-contain"
+                         onerror="this.onerror=null; this.src='https://placehold.co/240x60/080d1a/FDB723?text=Shopping+das+Tintas';">
+                </div>
                 <div>
-                    <div class="flex items-center justify-center md:justify-start gap-2">
-                        <span class="font-heading font-black text-lg text-white tracking-tight">Shopping das Tintas</span>
-                        <span class="text-[9px] font-heading font-black text-brand-yellow uppercase px-1.5 py-0.5 rounded bg-brand-yellow/10 border border-brand-yellow/30">16 ANOS</span>
-                    </div>
-                    <p class="text-slate-400 mt-0.5">R. Pres. Kennedy, 543 - Sl 02 - Centro, Sapiranga - RS</p>
-                    <p class="text-slate-500 text-[11px] mt-0.5">Seg a Sex: 07:30-11:30, 13:00-18:25 · Sáb: 08:00-12:00</p>
+                    <p class="text-slate-200 font-semibold">R. Pres. Kennedy, 543 - Sl 02 - Centro, Sapiranga - RS</p>
+                    <p class="text-slate-400 text-xs mt-0.5">Seg a Sex: 07:30-11:30, 13:00-18:25 · Sáb: 08:00-12:00</p>
                 </div>
             </div>
 
-            <div class="flex flex-wrap items-center justify-center gap-5 font-heading font-medium text-slate-300">
+            <div class="flex flex-wrap items-center justify-center gap-5 font-heading font-semibold text-slate-300">
                 <a href="#categorias" class="hover:text-white transition-colors">Produtos</a>
                 <a href="#marcas" class="hover:text-white transition-colors">Marcas</a>
                 <a href="#calculadora" class="hover:text-white transition-colors">Calculadora</a>
@@ -1046,16 +1041,16 @@
                 <a href="#localizacao" class="hover:text-white transition-colors">Loja Física</a>
             </div>
 
-            <div class="text-[11px] text-slate-500 text-center md:text-right">
+            <div class="text-xs text-slate-400 text-center md:text-right">
                 <p>© 2026 Shopping das Tintas · 16 Anos de Tradição · Sapiranga / RS</p>
-                <p class="mt-0.5">Posicionamento Digital desenvolvido por <strong class="text-brand-yellow font-medium">GENTTE</strong></p>
+                <p class="mt-0.5">Posicionamento Digital desenvolvido por <strong class="text-brand-yellow font-bold">GENTTE</strong></p>
             </div>
         </div>
     </footer>
 
     <!-- BOTÃO FLUTUANTE DE WHATSAPP -->
     <div class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
-        <div class="hidden sm:block bg-white text-slate-800 px-3.5 py-2 rounded-xl shadow-xl border border-slate-200 text-xs font-heading font-bold">
+        <div class="hidden sm:block bg-white text-slate-800 px-4 py-2.5 rounded-xl shadow-xl border border-slate-200 text-sm font-heading font-bold">
             Orçamento Sapiranga <span class="text-[#25D366]">Online</span>
         </div>
         
@@ -1096,17 +1091,15 @@
          */
         function updateLiveStoreStatus() {
             const now = new Date();
-            const day = now.getDay(); // 0: Dom, 1: Seg, ..., 6: Sab
+            const day = now.getDay();
             const minutes = now.getHours() * 60 + now.getMinutes();
 
             let isOpen = false;
             if (day >= 1 && day <= 5) {
-                // 07:30 (450) às 11:30 (690) e 13:00 (780) às 18:25 (1105)
                 if ((minutes >= 450 && minutes <= 690) || (minutes >= 780 && minutes <= 1105)) {
                     isOpen = true;
                 }
             } else if (day === 6) {
-                // 08:00 (480) às 12:00 (720)
                 if (minutes >= 480 && minutes <= 720) {
                     isOpen = true;
                 }
@@ -1116,10 +1109,10 @@
             const text = document.getElementById('storeStatusText');
 
             if (isOpen) {
-                badge.className = "inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-semibold text-[10px] uppercase tracking-wider";
+                badge.className = "inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 font-bold text-xs uppercase tracking-wider";
                 text.textContent = 'Loja Física Aberta Agora';
             } else {
-                badge.className = "inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 font-semibold text-[10px] uppercase tracking-wider";
+                badge.className = "inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 font-bold text-xs uppercase tracking-wider";
                 text.textContent = 'Balcão Reabre em Breve · WhatsApp Online';
             }
         }
@@ -1256,8 +1249,8 @@
                 const dot = document.createElement('button');
                 dot.setAttribute('aria-label', `Ir para página ${i + 1}`);
                 dot.className = i === currentReviewIndex 
-                    ? 'w-6 h-2 rounded-full bg-brand-blue transition-all duration-300' 
-                    : 'w-2 h-2 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300';
+                    ? 'w-7 h-2.5 rounded-full bg-brand-blue transition-all duration-300' 
+                    : 'w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300';
                 dot.onclick = () => goToReview(i);
                 dotsContainer.appendChild(dot);
             }
